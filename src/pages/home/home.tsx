@@ -1,5 +1,6 @@
 function Home() {
   return (
+    <>
     <div
       style={{
         backgroundColor: "#312e81",
@@ -78,6 +79,7 @@ function Home() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 
