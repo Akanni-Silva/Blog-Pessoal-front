@@ -9,7 +9,9 @@ function Navbar() {
             Blog Pessoal
           </Link>
           <div className="flex gap-4">
-            Postagens Temas Cadastrar tema Perfil Sair
+            Postagens Temas 
+            <Link to="/cadastro " className="hover:underline">Cadastrar</Link> tema Perfil 
+            <Link to="/" className="hover:underline">Sair</Link>
           </div>
         </div>
       </div>
