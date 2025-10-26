@@ -12,7 +12,7 @@ function Cadastro() {
               id="nome"
               name="nome"
               placeholder="Nome"
-              className="border-2 barder-slate-700 rounded p-2"
+              className="border-2 border-slate-700 rounded p-2"
             />
           </div>
           <div className="flex flex-col w-full">
