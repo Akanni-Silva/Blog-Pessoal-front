@@ -6,6 +6,7 @@ import Cadastro from "./pages/cadastro/Cadastro";
 import Login from "./pages/login/Login";
 import { AuthProvider } from "./contexts/AuthContext";
 import ListaTemas from "./components/temas/listaTemas/ListaTemas";
+import FormTema from "./components/temas/formtema/FormTema";
 
 
 
@@ -18,10 +19,13 @@ function App() {
           <div className="min-h-[80vh]">
             <Routes>
               <Route path="/" element={<Login />} />
-              <Route path="/login" element={<Login />} />
-              <Route path="/temas" element={<ListaTemas />} />
-              <Route path="/cadastro" element={<Cadastro />} />
               <Route path="/home" element={<Home />} />
+              <Route path="/cadastro" element={<Cadastro />} />
+              <Route path="/temas" element={<ListaTemas />} />
+              <Route path="/cadastrartema" element={<FormTema />} />
+              <Route path="/editartema/:id" element={<FormTema />} />
+              
+              
             </Routes>
           </div>
           <Footer />
