@@ -24,7 +24,6 @@ function CardPostagem({ postagem }: CardPostagensProps) {
           <p>{postagem.texto}</p>
           <p>Tema: {postagem.tema?.descricao}</p>
           <p>
-            Data:{" "}
             {new Intl.DateTimeFormat("pt-br", {
               dateStyle: "medium",
               timeStyle: "medium",

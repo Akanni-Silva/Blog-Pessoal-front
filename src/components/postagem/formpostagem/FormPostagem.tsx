@@ -32,7 +32,7 @@ function FormPostagem() {
 
   async function buscarPostagemPorId(id: string) {
     try {
-      await buscar(`/postagem/${id}`, setPostagem, {
+      await buscar(`/postagens/${id}`, setPostagem, {
         headers: { Authorization: token },
       });
     } catch (error: any) {
@@ -125,7 +125,7 @@ function FormPostagem() {
         if (error.toString().includes("401")) {
           handleLogout();
         } else {
-          alert("Erro ao cadastrar o tema.");
+          alert("Erro ao cadastrar a Postagem.");
         }
       }
     }
@@ -135,7 +135,7 @@ function FormPostagem() {
   const carregandoTema = tema.descricao === "";
 
   return (
-    <div className="container flex flex-col mx-auto items-center p-3 ">
+    <div className="container flex flex-col mx-auto items-center p-3 bg-white w-3xl rounded-2xl">
       <h1 className="text-4xl text-center my-8">
         {id !== undefined ? "Editar Postagem" : "Cadastrar Postagem"}
       </h1>
