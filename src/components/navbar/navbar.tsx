@@ -24,12 +24,12 @@ function Navbar() {
             Blog Pessoal
           </Link>
           <div className="flex gap-4 items-center">
-            <Link to="/perfil" className="hover:underline">
+            <Link to="/perfil" className="flex items-center gap-2 hover:underline">
               <img
                 src={usuario?.foto || "https://i.imgur.com/pK6vSCy.png"}
                 className="h-10 rounded-full hover:h-12 duration-500"
                 alt={usuario?.nome}
-              />
+              />Ola {usuario.nome}
             </Link>
             <Link to="/postagens" className="hover:underline">
               Postagens
