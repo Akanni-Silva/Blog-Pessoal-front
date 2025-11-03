@@ -11,7 +11,7 @@ function CardPostagem({ postagem }: CardPostagensProps) {
   const { usuario } = useContext(AuthContex);
 
   return (
-    <div className="border-slate-900 flex flex-col rounded overflow-hidden justify-between">
+    <div className="border-slate-900 border flex flex-col rounded overflow-hidden justify-between">
       <div>
         <div className="flex w-full bg-indigo-400 py-2 px-4 items-center gap-4">
           <img
